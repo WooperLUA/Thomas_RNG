@@ -21,6 +21,7 @@ h1
 }
 
 button {
+    font-family: 'Inter', serif;
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 18px;
@@ -49,6 +50,18 @@ button:hover {
     min-height: 35%;
     animation: flotte 3s ease-in-out infinite;
     box-shadow: 0 50px 50px rgba(0,0,0,0.2);
+}
+
+#rarity_text
+{
+    font-family: 'Inter', serif;
+    font-size: 30px;
+    margin-top: 2%;
+    text-shadow:
+            0 0 1px currentColor,
+            0 0 2px currentColor,
+            0 0 3px currentColor,
+            0 0 10px currentColor;
 }
 
 
@@ -121,5 +134,17 @@ button:hover {
     }
 }
 
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 1rem auto;
+    }
+}
 
 
